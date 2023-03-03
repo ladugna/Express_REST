@@ -1,8 +1,8 @@
 
 
 // 1. dependencies
-const fs= require('fs');
-const path= require('path');
+//const fs= require('fs');
+//const path= require('path');
 
 const express= require('express');
 const morgan = require('morgan');
@@ -10,11 +10,11 @@ const morgan = require('morgan');
 
 const intercept= require('./middlewares/intercept')
 const mealsRouter=require("./router/mealsRouter")
-const ingredientsRouter= require("./router/ingredientsRouter")
+//const ingredientsRouter= require("./router/ingredientsRouter")
 
 //2. init
 const app= express();
-
+//eman
 //3. setup = configure app settings
 app.disable('x-powered-by')
 

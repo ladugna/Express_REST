@@ -29,11 +29,11 @@ module.exports.addNewMeal= async(req, res, next)=>{
 
 module.exports.updateMeal= async(req, res, next)=>{
     try {
-        const meal_id= req.params;
+        const {meal_id}= req.params;
         const updatedMeal= req.body;
 
         mealsModel= mealsModel.map(meal=>{
-            if(meal.id===+meal_id)
+            if(meal.id===meal_id)
             return updatedMeal;
             //return [...mealsModel, ...updatedMeal]
             else
@@ -49,12 +49,12 @@ module.exports.updateMeal= async(req, res, next)=>{
 
 module.exports.getMealById= async(req, res, next)=>{
     try {
-        const meal_id= req.params;
-        mealsModel= mealsModel.filter(meal=>{
-            meal.id===+meal_id
+        const {meal_id}= req.params;
+        const meal= mealsModel.find(meal=>{
+            meal.id===meal_id
         })
 
-        res.json(mealsModel); 
+        res.json(meal); 
     } catch (error) {
         next(error)
         
@@ -64,11 +64,11 @@ module.exports.getMealById= async(req, res, next)=>{
 
 module.exports.deleteMealById= async(req, res, next)=>{
     try {
-        const meal_id= req.params;
-        mealsModel= mealsModel.filter(meal=>{
-            meal.id!==meal_id
-        })
-        ///mealsModel=mealsModel.find(meal=>meal.id===+meal_id)
+        const {meal_id}= req.params;
+        // mealsModel= mealsModel.filter(meal=>{
+        //     meal.id!==meal_id
+        // })
+        mealsModel=mealsModel.find(meal=>meal.id!==meal_id)
         res.json(mealsModel);
     } catch (error) {
         next(error)

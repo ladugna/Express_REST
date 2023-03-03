@@ -7,18 +7,18 @@ GET http://localhost:400/meals/1/ingredients
 POST http://localhost:400/meals/1/ingredients
 Content-Type: application/json
 
-{"id": 3, "name": "Missira", "amount":"7"}
+{"id": "3", "name": "Missira", "amount":"7"}
 
 
 ###
 DELETE  http://localhost:400/meals/1/ingredients/1
 
 ###
-GET http://localhost:400/meals/1/ingredients/1
+GET http://localhost:400/meals/1/ingredients/2
 Content-Type: application/json
 
 ###
-PUT http://localhost:400/meals/1/ingredients/1
+PUT http://localhost:400/meals/1/ingredients/2
 Content-Type: application/json
 
- {"id": 1, "name": "Dinnicha", "amount":"9"}
+ {"id": "2", "name": "Dinnicha1", "amount":"9"}

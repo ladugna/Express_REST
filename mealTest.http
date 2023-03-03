@@ -6,11 +6,11 @@ GET http://localhost:400/meals
 POST http://localhost:400/meals
 Content-Type: application/json
 
-{"id": 3, "name": "Missira"}
+{"id": "3", "name": "Missira1", "ingredients":[]}
 
 
 ###
-DELETE  http://localhost:400/meals/1
+DELETE  http://localhost:400/meals/3
 
 ###
 GET http://localhost:400/meals/1
@@ -20,7 +20,7 @@ Content-Type: application/json
 PUT http://localhost:400/meals/1
 Content-Type: application/json
 
- {"id": 1, "name": "Dinnicha"}
+ {"id": "3", "name": "Dinnicha", "ingredients":[]}
 
 
 
