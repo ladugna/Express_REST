@@ -1,0 +1,27 @@
+{
+  "name": "homework-04-ladugna",
+  "version": "1.0.0",
+  "description": "[![Open in Codespaces](https://classroom.github.com/assets/launch-codespace-f4981d0f882b2a3f0472912d15f9806d57e124e0fc890972558857b51b24a6f9.svg)](https://classroom.github.com/open-in-codespaces?assignment_repo_id=10348549)\r # MWA Homework - Express\r ## Exercise\r Create an Express application that implements a Restful Stateless API for an entity called `meals` that has sub-entity called `ingredients`:\r ```javascript\r let meals = [{\r     \"_id\": \"1\", \r     \"name\": \"Spaghetti Bolognese\", \r     \"ingredients\": [\r          {\"_id\": \"1\", \"name\": \"olive oil\", \"amount\": \"1 1/2 tbsp\"}, \r          {\"_id\": \"2\", \"name\": \"garlic cloves\", \"amount\": \"2\" }\r     ],\r }]\r ```\r * Have in mind to have a separation between the Routing layer and the Controllers layer. \r * Implement the routes for the following CRUD operations for courses and students and use the proper HTTP verbs (`GET` one and all,`POST`, `PUT`, and `DELETE`).\r * Test with any client extenstion or app (Do not build UI).\r * Your API accepts and returns `JSON` data from/to req/res body.\r * Log all requests to a file `access.log` using `morgan` middleware. \r * For your `POST` and `PUT` routes on the `meals` entity, create and apply a custom middleware to verify if a the `name` value is not null, otherwise send back an error.",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maharishi-university/homework-04-ladugna.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maharishi-university/homework-04-ladugna/issues"
+  },
+  "homepage": "https://github.com/maharishi-university/homework-04-ladugna#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.21"
+  }
+}

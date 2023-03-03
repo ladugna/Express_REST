@@ -1,0 +1,24 @@
+
+###
+GET http://localhost:400/meals/1/ingredients
+
+
+###
+POST http://localhost:400/meals/1/ingredients
+Content-Type: application/json
+
+{"id": 3, "name": "Missira", "amount":"7"}
+
+
+###
+DELETE  http://localhost:400/meals/1/ingredients/1
+
+###
+GET http://localhost:400/meals/1/ingredients/1
+Content-Type: application/json
+
+###
+PUT http://localhost:400/meals/1/ingredients/1
+Content-Type: application/json
+
+ {"id": 1, "name": "Dinnicha", "amount":"9"}
