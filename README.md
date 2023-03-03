@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [![Open in Codespaces](https://classroom.github.com/assets/launch-codespace-f4981d0f882b2a3f0472912d15f9806d57e124e0fc890972558857b51b24a6f9.svg)](https://classroom.github.com/open-in-codespaces?assignment_repo_id=10348549)
 # MWA Homework - Express
 ## Exercise
@@ -26,3 +27,7 @@ let meals = [{
 * Use a middleware to upload the meal's picture into a directory `./assets/pics`, only `.jpg` files should be accepted and picture size should not exceed `5 MB`, files should be renamed to represent Unix timestamps. Note that this request must have a `content-type` of `"multipart/form-data"`. *(You may use `multer` or `formidable` middlewares)*
 * Define a middleware to serve all static images of `./pictures/*` from `./assets/pics/*`.
 * Explore the possibility of uploading the files to a cloud service like S3.
+=======
+# Express_REST
+This is REST using Express.js.
+>>>>>>> 72d2531aa24ef9c5f9957398b62d268cd1b0b1aa
